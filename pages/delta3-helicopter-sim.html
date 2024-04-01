@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Hernan Perez Portfolio" />
+    <meta name="author" content="Hernan Perez" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>AW109 Helicopter Simulator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <section class="about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>AW109 Helicopter Simulator</h2>
+            <div class="line-dec"></div>
+            <span>
+			Delta3 partnered with Modena Air Service to develop an advanced AW109 Helicopter Simulator for pilot training and certification. The project extended over a year and focused on delivering a highly immersive and realistic simulation experience.
+			<br><br>
+
+			Using X-Plane 11 as a base software, the simulator features a custom helicopter model with meticulously tuned physics parameters and logic adapted to mimic the AW109's behavior accurately. It incorporates a Varjo XR-3 headset to blend the physical cockpit with a virtual background using chroma screen and virtual masks.
+			<br><br>
+
+			Certified by the Argentinian National Civil Aviation Administration (ANAC), this simulator is among the first in the world to receive certification for mixed reality implementation. Its significance lies in offering enhanced training efficacy, cost savings, and technological innovation in aviation simulation.
+			<br><br>
+			<b>Below are outlined the specific roles I have undertaken.</b>
+			</span>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="../assets/images/delta3-helicpoter-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+				  <h4>Instruments communication</h4>
+                  <p>
+                     I utilized Air Manager software to undertake two key roles within the project. Initially, I programmed the communication between the physical instruments (utilizing Arduinos) and the X-Plane Software through Lua scripts. 
+					 <br><br>
+					Following that, I focused on the replication of each instrument indicator to be shown on the multiple cockpit screens. This involved programming lua scripts on Air Manager, reading signals from X-Plane and incorporating the corresponding images, all aimed at achieving accurate replication of helicopter instrument indicators.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Instructor Operating Station (IOS) </h4>
+                  <p>
+					In addition to my other responsibilities, I developed an Instructor Operating Station (IOS) software. The IOS serves as a tool for instructors to configure flight parameters such as weight, fuel, and weather, as well as to introduce mid-flight failures.
+					<br><br>
+					This IOS application is developed using Unity and establishes a connection with X-Plane 11, enabling real-time reading and writing of signals.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="../assets/images/IOS-low.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="../assets/images/delta3-helicpoter-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+				  <h4>Varjo XR-3 chroma and masks setup</h4>
+                  <p>
+					I led the configuration of the mixed reality feature for the Varjo XR-3 Headset. This involved utilizing Varjo Base and Varjo Lab Tools to set up chroma colors, adjust external camera settings, and apply specific masks to exclude chroma computations in designated areas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Videos</h2>
+            <div class="line-dec"></div>
+          
+		
+			<iframe width="800" height="600"
+				src="https://www.youtube.com/embed/A_mR1nkdaJU">
+			</iframe>
+			
+			<h4><br><br>[Spanish] TV report appearence (from minute 4:16)<br></h4>
+			<iframe width="800" height="600"
+				src="https://www.youtube.com/embed/OSIzZFaePKc?start=256">
+			</iframe>
+		   </div>
+			
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
